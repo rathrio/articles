@@ -2,7 +2,7 @@ title: Equations Sample
 author: radi
 date: 2013-09-05
 
-Das hie im markdown file:
+Das im markdown file:
 
 ```html
 <div lang="latex">

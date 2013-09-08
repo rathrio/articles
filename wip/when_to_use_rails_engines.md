@@ -6,17 +6,17 @@ date: 2013-09-05
 
 At [Fadendaten][0], we recently started to fancy some heavy use of
 [Rails Engines][1], so we decided to write up some guidelines about when, or
-especially when __not__ to use them.
+especially when **not** to use them.
 
 Consider using a Rails Engine when:
 
-1. __You have to share at least two of the following components: Models,
-Controllers or Views.__ ....
+1. **You have to share at least two of the following components: Models,
+Controllers or Views.** ....
 
-2. __The Engine can be extracted from existing code.__ Good Engines,
+2. **The Engine can be extracted from existing code.** Good Engines,
 like good web frameworks, do not come out of nowhere. ...
 
-3. __The Engine will be used in at least two of your existing Applications.__
+3. **The Engine will be used in at least two of your existing Applications.**
 It is not worth extracting an Engine if you will not be using it anywhere
 else. That's it. Keep it simple. Extracting an engine because the tests run
 faster in a separate engine environment or it just making more sense to you

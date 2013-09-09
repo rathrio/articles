@@ -24,7 +24,8 @@ understanding of the work or linguistic phenomenon?
 *Why* this selection?
 
 5. **Method**
-*What* am I going to *do* with the Textual Material/Data? What *theory*, if any, will I apply?
+*What* am I going to *do* with the Textual Material/Data? What *theory*, if
+any, will I apply?
 
 6. **Evidence**
 *What* do I know/have I found out to *support my point/thesis*?

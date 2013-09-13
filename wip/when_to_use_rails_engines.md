@@ -1,6 +1,7 @@
 title: When to use Rails Engines
 author: radi
 date: 2013-09-05
+tags: rails, engines, ruby
 
 ![The disease](http://clipartist.info/clipart/pligg/COLOURINGBOOK.ORG/ryanlerch_steam_train_engine-1331px.png "The disease")
 

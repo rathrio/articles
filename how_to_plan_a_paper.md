@@ -1,6 +1,7 @@
 title: How to plan a paper
 author: radi
 date: 2013-09-08
+tags: writing, english
 
 ![Writing](http://i.imgur.com/FdrP3D0.jpg)
 

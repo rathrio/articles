@@ -1,4 +1,4 @@
-title: IRB for the lazy
+title: IRB for slobs
 author: radi
 date: 2013-09-16
 tags: ruby, rails
@@ -21,8 +21,8 @@ end
 1.9.3-p327 :001 > Production::OrderItem.where order_id: 62,
 1.9.3-p327 :002 >   order_type: Production::Order.to_s
 ```
-One possible solution is to manually assign the classes your experimenting with
-to a shorter constant:
+One possible solution is to manually assign the classes you are experimenting
+with to a shorter constant:
 
 ```ruby
 1.9.3-p327 :001 > O = Production::Order

@@ -51,7 +51,7 @@ were called on the original constant:
 1.9.3-p327 :006 > "Production::Order"
 ```
 
-This can not only be done with namespaces, but with any ruby object. The current
+This cannot only be done with namespaces, but with any ruby object. The current
 scope, `self`, will then be set to the given object:
 
 ```ruby

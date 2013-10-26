@@ -48,26 +48,32 @@ mechanism. As a consequence, many developers create modules with common
 behaviour and use them as mixins to reuse the code:
 
 ```ruby
-# Example 1
+# Order and Invoice both have line items with prices that must be converted
+# sometimes.
 
-# Example 2
-module Receipt
-  def total_quantity
-    line_items.sum :quantity
+class Order < ActiveRecord::Base
+  has_many :line_items, class_name: OrderItem
+
+  def convert_prices(new_currency, conversion_rate)
+    line_items.each do |item|
+      item.price_currency = new_currency
+      item.price_value   *= conversion_rate
+    end
   end
 end
 
-class Order < ActiveRecord::Base
-  include Receipt
-
-  has_many :line_items, class_name: OrderItem
-end
-
 class Invoice < ActiveRecord::Base
-  include Receipt
-
   has_many :line_items, class_name: InvoiceItem
+
+  def convert_prices(new_currency, conversion_rate)
+    line_items.each do |item|
+      item.price_currency = new_currency
+      item.price_value   *= conversion_rate
+    end
+  end
 end
+
+# The easiest way to eliminate the duplication is to extract 
 ```
 
 The shared behaviour does usually not belong to any of the `ActiveRecord`s'
